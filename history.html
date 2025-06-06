@@ -1,0 +1,1609 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UPSC भारतीय इतिहास - संपूर्ण गाइड</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Noto Sans Devanagari', sans-serif;
+            line-height: 1.6;
+        }
+        .chapter-title {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .topic-card {
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            transition: all 0.3s ease;
+        }
+        .topic-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px -1px rgba(0, 0, 0, 0.15);
+        }
+        .important {
+            background: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-weight: 600;
+        }
+        .mcq-option {
+            background: #f8fafc;
+            border: 1px solid #e2e8f0;
+            padding: 8px 12px;
+            margin: 4px 0;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+        .mcq-option:hover {
+            background: #e2e8f0;
+        }
+        .answer {
+            background: #d1fae5 !important;
+            border-color: #10b981 !important;
+        }
+        @media print {
+            body { font-size: 12px; }
+            .no-print { display: none; }
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+    
+    <!-- Header -->
+    <header class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 py-6">
+            <div class="text-center">
+                <h1 class="text-4xl font-bold chapter-title mb-2">
+                    <i class="fas fa-scroll mr-3"></i>भारतीय इतिहास - UPSC संपूर्ण गाइड
+                </h1>
+                <p class="text-lg text-gray-600">प्राचीन, मध्यकालीन एवं आधुनिक भारत | कला एवं संस्कृति</p>
+                <div class="mt-4 flex justify-center space-x-4 text-sm">
+                    <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full">
+                        <i class="fas fa-check-circle mr-1"></i>Pre + Mains Ready
+                    </span>
+                    <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full">
+                        <i class="fas fa-bookmark mr-1"></i>Short Notes Format
+                    </span>
+                    <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full">
+                        <i class="fas fa-language mr-1"></i>हिंदी माध्यम
+                    </span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="max-w-7xl mx-auto px-4 py-8">
+        
+        <!-- Table of Contents -->
+        <div class="bg-white rounded-lg shadow-lg p-6 mb-8">
+            <h2 class="text-2xl font-bold text-center mb-6 text-gray-800">
+                <i class="fas fa-list-ul mr-2"></i>विषय सूची
+            </h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
+                <div class="bg-gradient-to-br from-blue-50 to-blue-100 p-4 rounded-lg">
+                    <h3 class="font-semibold text-blue-800 mb-2">
+                        <i class="fas fa-mountain mr-2"></i>प्राचीन भारत
+                    </h3>
+                    <ul class="text-sm text-blue-700 space-y-1">
+                        <li>• सिंधु घाटी सभ्यता</li>
+                        <li>• वैदिक काल</li>
+                        <li>• महाजनपद</li>
+                        <li>• मौर्य साम्राज्य</li>
+                        <li>• गुप्त काल</li>
+                    </ul>
+                </div>
+                <div class="bg-gradient-to-br from-green-50 to-green-100 p-4 rounded-lg">
+                    <h3 class="font-semibold text-green-800 mb-2">
+                        <i class="fas fa-mosque mr-2"></i>मध्यकालीन भारत
+                    </h3>
+                    <ul class="text-sm text-green-700 space-y-1">
+                        <li>• दिल्ली सल्तनत</li>
+                        <li>• मुगल साम्राज्य</li>
+                        <li>• मराठा साम्राज्य</li>
+                        <li>• भक्ति आंदोलन</li>
+                        <li>• सूफी आंदोलन</li>
+                    </ul>
+                </div>
+                <div class="bg-gradient-to-br from-orange-50 to-orange-100 p-4 rounded-lg">
+                    <h3 class="font-semibold text-orange-800 mb-2">
+                        <i class="fas fa-flag mr-2"></i>आधुनिक भारत
+                    </h3>
+                    <ul class="text-sm text-orange-700 space-y-1">
+                        <li>• ब्रिटिश काल</li>
+                        <li>• स्वतंत्रता संग्राम</li>
+                        <li>• गांधी युग</li>
+                        <li>• संविधान निर्माण</li>
+                        <li>• सामाजिक सुधार</li>
+                    </ul>
+                </div>
+                <div class="bg-gradient-to-br from-purple-50 to-purple-100 p-4 rounded-lg">
+                    <h3 class="font-semibold text-purple-800 mb-2">
+                        <i class="fas fa-palette mr-2"></i>कला एवं संस्कृति
+                    </h3>
+                    <ul class="text-sm text-purple-700 space-y-1">
+                        <li>• स्थापत्य कला</li>
+                        <li>• मूर्तिकला</li>
+                        <li>• संगीत व नृत्य</li>
+                        <li>• साहित्य</li>
+                        <li>• विरासत स्थल</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Chapter 1: प्राचीन भारत -->
+        <div class="bg-white rounded-lg shadow-lg p-8 mb-8">
+            <h2 class="text-3xl font-bold chapter-title mb-6 text-center">
+                <i class="fas fa-mountain mr-3"></i>अध्याय 1: प्राचीन भारत (Ancient India)
+            </h2>
+
+            <!-- सिंधु घाटी सभ्यता -->
+            <div class="topic-card bg-gradient-to-r from-blue-50 to-indigo-50 p-6 rounded-lg mb-6">
+                <h3 class="text-xl font-bold text-blue-800 mb-4">
+                    <i class="fas fa-city mr-2"></i>सिंधु घाटी सभ्यता (2500-1750 ईसा पूर्व)
+                </h3>
+                
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div>
+                        <h4 class="font-semibold text-blue-700 mb-2">मुख्य विशेषताएं:</h4>
+                        <ul class="space-y-2 text-sm">
+                            <li>• <span class="important">हड़प्पा सभ्यता</span> के नाम से भी प्रसिद्ध</li>
+                            <li>• विश्व की सबसे पुरानी <span class="important">नगरीय सभ्यता</span></li>
+                            <li>• उन्नत <span class="important">जल निकासी व्यवस्था</span></li>
+                            <li>• <span class="important">कांस्य युगीन</span> सभ्यता</li>
+                            <li>• <span class="important">लिपि अभी भी अपठित</span></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="font-semibold text-blue-700 mb-2">प्रमुख स्थल:</h4>
+                        <ul class="space-y-2 text-sm">
+                            <li>• <span class="important">हड़प्पा</span> - पहली खोज (1921)</li>
+                            <li>• <span class="important">मोहनजोदड़ो</span> - मृतकों का टीला</li>
+                            <li>• <span class="important">धौलावीरा</span> - जल संरक्षण</li>
+                            <li>• <span class="important">लोथल</span> - बंदरगाह शहर</li>
+                            <li>• <span class="important">कालीबंगा</span> - हल के निशान</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="mt-4">
+                    <h4 class="font-semibold text-blue-700 mb-2">सामाजिक-आर्थिक जीवन:</h4>
+                    <div class="grid md:grid-cols-3 gap-4 text-sm">
+                        <div>
+                            <strong>व्यापार:</strong>
+                            <ul class="mt-1">
+                                <li>• मेसोपोटामिया से संबंध</li>
+                                <li>• मानकीकृत माप-तौल</li>
+                                <li>• कृषि और पशुपालन</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <strong>कला:</strong>
+                            <ul class="mt-1">
+                                <li>• कांस्य नर्तकी की मूर्ति</li>
+                                <li>• पशुपति की मुहर</li>
+                                <li>• रंगबिरंगी मिट्टी के बर्तन</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <strong>धर्म:</strong>
+                            <ul class="mt-1">
+                                <li>• मातृदेवी की पूजा</li>
+                                <li>• पशुपति शिव</li>
+                                <li>• वृक्ष और जल पूजा</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- वैदिक काल -->
+            <div class="topic-card bg-gradient-to-r from-green-50 to-emerald-50 p-6 rounded-lg mb-6">
+                <h3 class="text-xl font-bold text-green-800 mb-4">
+                    <i class="fas fa-book mr-2"></i>वैदिक काल (1500-600 ईसा पूर्व)
+                </h3>
+                
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div>
+                        <h4 class="font-semibold text-green-700 mb-2">ऋग्वैदिक काल (1500-1000 ईसा पूर्व):</h4>
+                        <ul class="space-y-2 text-sm">
+                            <li>• <span class="important">आर्यों का आगमन</span></li>
+                            <li>• <span class="important">ऋग्वेद</span> की रचना</li>
+                            <li>• <span class="important">इंद्र</span> प्रमुख देवता</li>
+                            <li>• <span class="important">पशुपालन प्रधान</span> अर्थव्यवस्था</li>
+                            <li>• <span class="important">वर्ण व्यवस्था</span> का आरंभ</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="font-semibold text-green-700 mb-2">उत्तर वैदिक काल (1000-600 ईसा पूर्व):</h4>
+                        <ul class="space-y-2 text-sm">
+                            <li>• <span class="important">सामवेद, यजुर्वेद, अथर्ववेद</span></li>
+                            <li>• <span class="important">कृषि प्रधान</span> अर्थव्यवस्था</li>
+                            <li>• <span class="important">ब्राह्मण ग्रंथों</span> की रचना</li>
+                            <li>• <span class="important">आश्रम व्यवस्था</span> का विकास</li>
+                            <li>• <span class="important">राजतंत्र</span> का स्थायीकरण</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="mt-4">
+                    <h4 class="font-semibold text-green-700 mb-2">वैदिक साहित्य:</h4>
+                    <div class="grid md:grid-cols-4 gap-4 text-sm">
+                        <div class="bg-white p-3 rounded">
+                            <strong>ऋग्वेद:</strong>
+                            <ul class="mt-1">
+                                <li>• 1028 सूक्त</li>
+                                <li>• प्राचीनतम वेद</li>
+                                <li>• गायत्री मंत्र</li>
+                            </ul>
+                        </div>
+                        <div class="bg-white p-3 rounded">
+                            <strong>सामवेद:</strong>
+                            <ul class="mt-1">
+                                <li>• संगीत की पुस्तक</li>
+                                <li>• गायन मंत्र</li>
+                                <li>• उद्गाता पुरोहित</li>
+                            </ul>
+                        </div>
+                        <div class="bg-white p-3 rounded">
+                            <strong>यजुर्वेद:</strong>
+                            <ul class="mt-1">
+                                <li>• यज्ञ की पुस्तक</li>
+                                <li>• कर्मकांड</li>
+                                <li>• अध्वर्यु पुरोहित</li>
+                            </ul>
+                        </div>
+                        <div class="bg-white p-3 rounded">
+                            <strong>अथर्ववेद:</strong>
+                            <ul class="mt-1">
+                                <li>• जादू-टोना</li>
+                                <li>• आयुर्वेद</li>
+                                <li>• ब्रह्मा पुरोहित</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- महाजनपद -->
+            <div class="topic-card bg-gradient-to-r from-purple-50 to-pink-50 p-6 rounded-lg mb-6">
+                <h3 class="text-xl font-bold text-purple-800 mb-4">
+                    <i class="fas fa-crown mr-2"></i>महाजनपद काल (600-300 ईसा पूर्व)
+                </h3>
+                
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div>
+                        <h4 class="font-semibold text-purple-700 mb-2">16 महाजनपद:</h4>
+                        <div class="grid grid-cols-2 gap-2 text-sm">
+                            <ul class="space-y-1">
+                                <li>• <span class="important">मगध</span> (बिहार)</li>
+                                <li>• <span class="important">कोसल</span> (अवध)</li>
+                                <li>• <span class="important">वत्स</span> (कौशांबी)</li>
+                                <li>• <span class="important">अवंति</span> (उज्जैन)</li>
+                                <li>• <span class="important">गांधार</span> (तक्षशिला)</li>
+                                <li>• <span class="important">कंबोज</span> (राजौरी)</li>
+                                <li>• <span class="important">कुरु</span> (थानेसर)</li>
+                                <li>• <span class="important">पांचाल</span> (रोहिलखंड)</li>
+                            </ul>
+                            <ul class="space-y-1">
+                                <li>• <span class="important">मत्स्य</span> (जयपुर)</li>
+                                <li>• <span class="important">चेदि</span> (बुंदेलखंड)</li>
+                                <li>• <span class="important">वज्जी</span> (मुजफ्फरपुर)</li>
+                                <li>• <span class="important">मल्ल</span> (गोरखपुर)</li>
+                                <li>• <span class="important">काशी</span> (वाराणसी)</li>
+                                <li>• <span class="important">अंग</span> (भागलपुर)</li>
+                                <li>• <span class="important">शूरसेन</span> (मथुरा)</li>
+                                <li>• <span class="important">अश्मक</span> (गोदावरी)</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div>
+                        <h4 class="font-semibold text-purple-700 mb-2">प्रमुख विशेषताएं:</h4>
+                        <ul class="space-y-2 text-sm">
+                            <li>• <span class="important">राजतंत्र और गणतंत्र</span> दोनों प्रणालियां</li>
+                            <li>• <span class="important">मगध</span> की सर्वोच्चता</li>
+                            <li>• <span class="important">लोहे का प्रयोग</span></li>
+                            <li>• <span class="important">नगरीकरण</span> की प्रक्रिया</li>
+                            <li>• <span class="important">व्यापार और वाणिज्य</span> का विकास</li>
+                            <li>• <span class="important">सिक्कों का प्रचलन</span></li>
+                        </ul>
+
+                        <h4 class="font-semibold text-purple-700 mb-2 mt-4">मगध की प्रधानता के कारण:</h4>
+                        <ul class="space-y-1 text-sm">
+                            <li>• उपजाऊ भूमि</li>
+                            <li>• लोहे की खानें</li>
+                            <li>• नदियों से सुरक्षा</li>
+                            <li>• व्यापारिक मार्ग</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- बौद्ध और जैन धर्म -->
+            <div class="topic-card bg-gradient-to-r from-orange-50 to-red-50 p-6 rounded-lg mb-6">
+                <h3 class="text-xl font-bold text-orange-800 mb-4">
+                    <i class="fas fa-peace mr-2"></i>बौद्ध और जैन धर्म (6वीं सदी ईसा पूर्व)
+                </h3>
+                
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div>
+                        <h4 class="font-semibold text-orange-700 mb-2">बौद्ध धर्म:</h4>
+                        <div class="bg-white p-4 rounded">
+                            <p><strong>संस्थापक:</strong> <span class="important">गौतम बुद्ध</span> (563-483 ईसा पूर्व)</p>
+                            <p><strong>जन्म स्थान:</strong> <span class="important">लुंबिनी</span> (नेपाल)</p>
+                            <p><strong>ज्ञान प्राप्ति:</strong> <span class="important">बोधगया</span> (बिहार)</p>
+                            <p><strong>प्रथम उपदेश:</strong> <span class="important">सारनाथ</span> (वाराणसी)</p>
+                            <p><strong>महापरिनिर्वाण:</strong> <span class="important">कुशीनगर</span> (उत्तर प्रदेश)</p>
+                        </div>
+                        
+                        <h5 class="font-semibold mt-3 mb-2">चार आर्य सत्य:</h5>
+                        <ul class="text-sm space-y-1">
+                            <li>• <span class="important">दुःख</span> - जीवन दुःखमय है</li>
+                            <li>• <span class="important">दुःख समुदाय</span> - तृष्णा दुःख का कारण</li>
+                            <li>• <span class="important">दुःख निरोध</span> - तृष्णा का नाश</li>
+                            <li>• <span class="important">दुःख निरोध मार्ग</span> - अष्टांगिक मार्ग</li>
+                        </ul>
+
+                        <h5 class="font-semibold mt-3 mb-2">अष्टांगिक मार्ग:</h5>
+                        <div class="grid grid-cols-2 gap-2 text-sm">
+                            <ul>
+                                <li>• सम्यक दृष्टि</li>
+                                <li>• सम्यक संकल्प</li>
+                                <li>• सम्यक वाणी</li>
+                                <li>• सम्यक कर्म</li>
+                            </ul>
+                            <ul>
+                                <li>• सम्यक आजीव</li>
+                                <li>• सम्यक व्यायाम</li>
+                                <li>• सम्यक स्मृति</li>
+                                <li>• सम्यक समाधि</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <h4 class="font-semibold text-orange-700 mb-2">जैन धर्म:</h4>
+                        <div class="bg-white p-4 rounded">
+                            <p><strong>24वें तीर्थंकर:</strong> <span class="important">महावीर</span> (599-527 ईसा पूर्व)</p>
+                            <p><strong>प्रथम तीर्थंकर:</strong> <span class="important">ऋषभनाथ</span></p>
+                            <p><strong>23वें तीर्थंकर:</strong> <span class="important">पार्श्वनाथ</span></p>
+                            <p><strong>जन्म स्थान:</strong> <span class="important">कुंडग्राम</span> (बिहार)</p>
+                        </div>
+                        
+                        <h5 class="font-semibold mt-3 mb-2">पंच महाव्रत:</h5>
+                        <ul class="text-sm space-y-1">
+                            <li>• <span class="important">अहिंसा</span> - किसी भी जीव की हत्या न करना</li>
+                            <li>• <span class="important">सत्य</span> - सत्य बोलना</li>
+                            <li>• <span class="important">अस्तेय</span> - चोरी न करना</li>
+                            <li>• <span class="important">ब्रह्मचर्य</span> - यौन संयम</li>
+                            <li>• <span class="important">अपरिग्रह</span> - संपत्ति न रखना</li>
+                        </ul>
+
+                        <h5 class="font-semibold mt-3 mb-2">सिद्धांत:</h5>
+                        <ul class="text-sm space-y-1">
+                            <li>• <span class="important">स्याद्वाद</span> - अनेकांतवाद</li>
+                            <li>• <span class="important">कर्मवाद</span> में विश्वास</li>
+                            <li>• <span class="important">आत्मा की शुद्धता</span></li>
+                            <li>• <span class="important">त्रिरत्न</span> - सम्यक दर्शन, ज्ञान, चरित्र</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="mt-4 bg-white p-4 rounded">
+                    <h4 class="font-semibold text-orange-700 mb-2">महत्व और प्रभाव:</h4>
+                    <div class="grid md:grid-cols-3 gap-4 text-sm">
+                        <div>
+                            <strong>सामाजिक सुधार:</strong>
+                            <ul class="mt-1">
+                                <li>• जाति प्रथा का विरोध</li>
+                                <li>• महिलाओं को सम्मान</li>
+                                <li>• अहिंसा का प्रचार</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <strong>भाषा और साहित्य:</strong>
+                            <ul class="mt-1">
+                                <li>• पाली और प्राकृत का विकास</li>
+                                <li>• त्रिपिटक साहित्य</li>
+                                <li>• जातक कथाओं का संग्रह</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <strong>कला और स्थापत्य:</strong>
+                            <ul class="mt-1">
+                                <li>• स्तूप निर्माण</li>
+                                <li>• विहार परंपरा</li>
+                                <li>• मूर्तिकला का विकास</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- मौर्य साम्राज्य -->
+            <div class="topic-card bg-gradient-to-r from-indigo-50 to-blue-50 p-6 rounded-lg mb-6">
+                <h3 class="text-xl font-bold text-indigo-800 mb-4">
+                    <i class="fas fa-chess-king mr-2"></i>मौर्य साम्राज्य (321-185 ईसा पूर्व)
+                </h3>
+                
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div>
+                        <h4 class="font-semibold text-indigo-700 mb-2">प्रमुख शासक:</h4>
+                        
+                        <div class="bg-white p-4 rounded mb-3">
+                            <h5 class="font-semibold text-indigo-600">चंद्रगुप्त मौर्य (321-297 ईसा पूर्व):</h5>
+                            <ul class="text-sm space-y-1 mt-2">
+                                <li>• <span class="important">चाणक्य</span> के मार्गदर्शन में सिंहासन प्राप्त</li>
+                                <li>• <span class="important">सेल्यूकस निकेटर</span> को हराया</li>
+                                <li>• <span class="important">मेगस्थनीज</span> - यूनानी राजदूत</li>
+                                <li>• <span class="important">अर्थशास्त्र</span> - कौटिल्य द्वारा लिखित</li>
+                            </ul>
+                        </div>
+
+                        <div class="bg-white p-4 rounded mb-3">
+                            <h5 class="font-semibold text-indigo-600">बिंदुसार (297-273 ईसा पूर्व):</h5>
+                            <ul class="text-sm space-y-1 mt-2">
+                                <li>• <span class="important">अमित्रोचात्स</span> (शत्रुओं का नाश करने वाला)</li>
+                                <li>• <span class="important">आजीवक संप्रदाय</span> का अनुयायी</li>
+                                <li>• दक्षिण भारत में विस्तार</li>
+                            </ul>
+                        </div>
+
+                        <div class="bg-white p-4 rounded">
+                            <h5 class="font-semibold text-indigo-600">अशोक महान् (273-232 ईसा पूर्व):</h5>
+                            <ul class="text-sm space-y-1 mt-2">
+                                <li>• <span class="important">कलिंग युद्ध</span> (261 ईसा पूर्व)</li>
+                                <li>• <span class="important">धम्म नीति</span> का प्रचार</li>
+                                <li>• <span class="important">14 शिलालेख</span> और अन्य अभिलेख</li>
+                                <li>• <span class="important">बौद्ध धर्म</span> का संरक्षक</li>
+                                <li>• <span class="important">मिशनरी</span> भेजकर धर्म प्रचार</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <h4 class="font-semibold text-indigo-700 mb-2">प्रशासनिक व्यवस्था:</h4>
+                        
+                        <div class="bg-white p-4 rounded mb-3">
+                            <h5 class="font-semibold text-indigo-600">केंद्रीय प्रशासन:</h5>
+                            <ul class="text-sm space-y-1 mt-2">
+                                <li>• <span class="important">राजा</span> - सर्वोच्च शक्ति</li>
+                                <li>• <span class="important">मंत्रिपरिषद्</span> - सलाहकार</li>
+                                <li>• <span class="important">महामात्य</span> - मुख्य अधिकारी</li>
+                                <li>• <span class="important">पुरोहित</span> - धार्मिक सलाहकार</li>
+                                <li>• <span class="important">सेनापति</span> - सेना प्रमुख</li>
+                            </ul>
+                        </div>
+
+                        <div class="bg-white p-4 rounded mb-3">
+                            <h5 class="font-semibold text-indigo-600">प्रांतीय प्रशासन:</h5>
+                            <ul class="text-sm space-y-1 mt-2">
+                                <li>• <span class="important">5 प्रांत</span> - उत्तरापथ, दक्षिणापथ, अवंतिरत्त, कलिंग, प्राच्य</li>
+                                <li>• <span class="important">कुमार</span> - प्रांतीय शासक</li>
+                                <li>• <span class="important">महामात्य</span> - प्रांतीय अधिकारी</li>
+                            </ul>
+                        </div>
+
+                        <div class="bg-white p-4 rounded">
+                            <h5 class="font-semibold text-indigo-600">स्थानीय प्रशासन:</h5>
+                            <ul class="text-sm space-y-1 mt-2">
+                                <li>• <span class="important">जनपद</span> - जिला</li>
+                                <li>• <span class="important">आहार</span> - तहसील</li>
+                                <li>• <span class="important">ग्राम</span> - गांव</li>
+                                <li>• <span class="important">ग्रामणी</span> - गांव का मुखिया</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-4">
+                    <h4 class="font-semibold text-indigo-700 mb-2">अशोक की धम्म नीति:</h4>
+                    <div class="grid md:grid-cols-3 gap-4 text-sm">
+                        <div class="bg-white p-3 rounded">
+                            <strong>मुख्य सिद्धांत:</strong>
+                            <ul class="mt-1">
+                                <li>• अहिंसा (अकेला धम्म)</li>
+                                <li>• सत्यवादिता</li>
+                                <li>• दया और करुणा</li>
+                                <li>• सभी धर्मों का सम्मान</li>
+                            </ul>
+                        </div>
+                        <div class="bg-white p-3 rounded">
+                            <strong>प्रचार माध्यम:</strong>
+                            <ul class="mt-1">
+                                <li>• शिलालेख और स्तंभ लेख</li>
+                                <li>• धम्म महामात्य</li>
+                                <li>• धम्म यात्राएं</li>
+                                <li>• विदेशी मिशन</li>
+                            </ul>
+                        </div>
+                        <div class="bg-white p-3 rounded">
+                            <strong>सामाजिक कल्याण:</strong>
+                            <ul class="mt-1">
+                                <li>• चिकित्सा व्यवस्था</li>
+                                <li>• पशु-चिकित्सा</li>
+                                <li>• वृक्षारोपण</li>
+                                <li>• सड़क निर्माण</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- गुप्त काल -->
+            <div class="topic-card bg-gradient-to-r from-yellow-50 to-amber-50 p-6 rounded-lg mb-6">
+                <h3 class="text-xl font-bold text-yellow-800 mb-4">
+                    <i class="fas fa-star mr-2"></i>गुप्त काल - स्वर्ण युग (320-550 ईस्वी)
+                </h3>
+                
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div>
+                        <h4 class="font-semibold text-yellow-700 mb-2">प्रमुख शासक:</h4>
+                        
+                        <div class="bg-white p-4 rounded mb-3">
+                            <h5 class="font-semibold text-yellow-600">चंद्रगुप्त प्रथम (320-335 ईस्वी):</h5>
+                            <ul class="text-sm space-y-1 mt-2">
+                                <li>• गुप्त साम्राज्य का वास्तविक संस्थापक</li>
+                                <li>• <span class="important">लिच्छवि राजकुमारी कुमारदेवी</span> से विवाह</li>
+                                <li>• <span class="important">महाराजाधिराज</span> की उपाधि</li>
+                            </ul>
+                        </div>
+
+                        <div class="bg-white p-4 rounded mb-3">
+                            <h5 class="font-semibold text-yellow-600">समुद्रगुप्त (335-375 ईस्वी):</h5>
+                            <ul class="text-sm space-y-1 mt-2">
+                                <li>• <span class="important">भारत का नेपोलियन</span></li>
+                                <li>• <span class="important">प्रयाग प्रशस्ति</span> - हरिषेण द्वारा</li>
+                                <li>• संगीत प्रेमी - <span class="important">वीणा बजाते हुए सिक्के</span></li>
+                                <li>• <span class="important">अश्वमेध यज्ञ</span> का आयोजन</li>
+                            </ul>
+                        </div>
+
+                        <div class="bg-white p-4 rounded">
+                            <h5 class="font-semibold text-yellow-600">चंद्रगुप्त द्वितीय (375-415 ईस्वी):</h5>
+                            <ul class="text-sm space-y-1 mt-2">
+                                <li>• <span class="important">विक्रमादित्य</span> की उपाधि</li>
+                                <li>• <span class="important">फाह्यान</span> की यात्रा</li>
+                                <li>• <span class="important">नवरत्न</span> - कालिदास, धन्वंतरि</li>
+                                <li>• शकों का अंतिम विनाश</li>
+                                <li>• उज्जैन से शासन</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <h4 class="font-semibold text-yellow-700 mb-2">साहित्य और विज्ञान:</h4>
+                        
+                        <div class="bg-white p-4 rounded mb-3">
+                            <h5 class="font-semibold text-yellow-600">महान् साहित्यकार:</h5>
+                            <ul class="text-sm space-y-1 mt-2">
+                                <li>• <span class="important">कालिदास</span> - अभिज्ञानशाकुंतलम्, मेघदूत</li>
+                                <li>• <span class="important">हरिषेण</span> - प्रयाग प्रशस्ति</li>
+                                <li>• <span class="important">भारवि</span> - किरातार्जुनीयम्</li>
+                                <li>• <span class="important">भतृहरि</span> - शतकत्रय</li>
+                            </ul>
+                        </div>
+
+                        <div class="bg-white p-4 rounded mb-3">
+                            <h5 class="font-semibold text-yellow-600">विज्ञान और गणित:</h5>
+                            <ul class="text-sm space-y-1 mt-2">
+                                <li>• <span class="important">आर्यभट्ट</span> - आर्यभटीयम्, खगोल विज्ञान</li>
+                                <li>• <span class="important">वराहमिहिर</span> - बृहत्संहिता</li>
+                                <li>• <span class="important">धन्वंतरि</span> - आयुर्वेद</li>
+                                <li>• <span class="important">शून्य की खोज</span></li>
+                            </ul>
+                        </div>
+
+                        <div class="bg-white p-4 rounded">
+                            <h5 class="font-semibold text-yellow-600">धर्म और दर्शन:</h5>
+                            <ul class="text-sm space-y-1 mt-2">
+                                <li>• <span class="important">हिंदू धर्म का पुनरुत्थान</span></li>
+                                <li>• <span class="important">पुराणों</span> की रचना</li>
+                                <li>• <span class="important">नालंदा विश्वविद्यालय</span></li>
+                                <li>• धार्मिक सहिष्णुता</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-4">
+                    <h4 class="font-semibold text-yellow-700 mb-2">कला और स्थापत्य:</h4>
+                    <div class="grid md:grid-cols-3 gap-4 text-sm">
+                        <div class="bg-white p-3 rounded">
+                            <strong>मूर्तिकला:</strong>
+                            <ul class="mt-1">
+                                <li>• बुद्ध की खड़ी मूर्तियां</li>
+                                <li>• मथुरा शैली</li>
+                                <li>• सारनाथ शैली</li>
+                                <li>• धातु प्रतिमाएं</li>
+                            </ul>
+                        </div>
+                        <div class="bg-white p-3 rounded">
+                            <strong>चित्रकला:</strong>
+                            <ul class="mt-1">
+                                <li>• अजंता की गुफाएं</li>
+                                <li>• एलोरा की गुफाएं</li>
+                                <li>• बाघ की गुफाएं</li>
+                                <li>• सिगिरिया (श्रीलंका)</li>
+                            </ul>
+                        </div>
+                        <div class="bg-white p-3 rounded">
+                            <strong>स्थापत्य:</strong>
+                            <ul class="mt-1">
+                                <li>• दशावतार मंदिर (देवगढ़)</li>
+                                <li>• भीतरगांव मंदिर</li>
+                                <li>• पार्वती मंदिर (नचना कुठार)</li>
+                                <li>• ईंट और पत्थर का प्रयोग</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- दक्षिण के राजवंश -->
+            <div class="topic-card bg-gradient-to-r from-teal-50 to-cyan-50 p-6 rounded-lg mb-6">
+                <h3 class="text-xl font-bold text-teal-800 mb-4">
+                    <i class="fas fa-map-marked-alt mr-2"></i>दक्षिण भारतीय राजवंश
+                </h3>
+                
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div>
+                        <h4 class="font-semibold text-teal-700 mb-2">चोल साम्राज्य (9वीं-13वीं सदी):</h4>
+                        
+                        <div class="bg-white p-4 rounded mb-3">
+                            <h5 class="font-semibold text-teal-600">प्रमुख शासक:</h5>
+                            <ul class="text-sm space-y-1 mt-2">
+                                <li>• <span class="important">विजयालय</span> - चोल साम्राज्य का संस्थापक</li>
+                                <li>• <span class="important">राजराज चोल प्रथम</span> (985-1014)</li>
+                                <li>• <span class="important">राजेंद्र चोल प्रथम</span> (1014-1044)</li>
+                                <li>• <span class="important">कुलोतुंग चोल</span></li>
+                            </ul>
+                        </div>
+
+                        <div class="bg-white p-4 rounded mb-3">
+                            <h5 class="font-semibold text-teal-600">मुख्य उपलब्धियां:</h5>
+                            <ul class="text-sm space-y-1 mt-2">
+                                <li>• <span class="important">बृहदीश्वर मंदिर</span> (तंजावुर)</li>
+                                <li>• <span class="important">नौसैनिक शक्ति</span> - दक्षिण-पूर्व एशिया तक</li>
+                                <li>• <span class="important">ग्राम स्वराज</span> प्रणाली</li>
+                                <li>• <span class="important">सिंचाई व्यवस्था</span></li>
+                            </ul>
+                        </div>
+
+                        <h4 class="font-semibold text-teal-700 mb-2">चालुक्य वंश:</h4>
+                        <div class="bg-white p-4 rounded">
+                            <ul class="text-sm space-y-1">
+                                <li>• <span class="important">पुलकेशिन द्वितीय</span> - हर्षवर्धन को हराया</li>
+                                <li>• <span class="important">बादामी</span> - राजधानी</li>
+                                <li>• <span class="important">ऐहोल</span> - मंदिरों का शहर</li>
+                                <li>• <span class="important">पट्टदकल</span> - राज्याभिषेक स्थल</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <h4 class="font-semibold text-teal-700 mb-2">पांड्य राजवंश:</h4>
+                        <div class="bg-white p-4 rounded mb-3">
+                            <ul class="text-sm space-y-1">
+                                <li>• <span class="important">मदुरै</span> - राजधानी</li>
+                                <li>• <span class="important">मीनाक्षी मंदिर</span></li>
+                                <li>• <span class="important">समुद्री व्यापार</span></li>
+                                <li>• <span class="important">मोती मत्स्य उद्योग</span></li>
+                            </ul>
+                        </div>
+
+                        <h4 class="font-semibold text-teal-700 mb-2">संगम साहित्य:</h4>
+                        <div class="bg-white p-4 rounded mb-3">
+                            <h5 class="font-semibold text-teal-600">तीन संगम:</h5>
+                            <ul class="text-sm space-y-1 mt-2">
+                                <li>• <span class="important">प्रथम संगम</span> - मदुरै (अगत्त्य)</li>
+                                <li>• <span class="important">द्वितीय संगम</span> - कपाटपुरम</li>
+                                <li>• <span class="important">तृतीय संगम</span> - मदुरै</li>
+                            </ul>
+                        </div>
+
+                        <div class="bg-white p-4 rounded">
+                            <h5 class="font-semibold text-teal-600">प्रमुख ग्रंथ:</h5>
+                            <ul class="text-sm space-y-1 mt-2">
+                                <li>• <span class="important">तोलकाप्पियम्</span> - व्याकरण</li>
+                                <li>• <span class="important">शिलप्पदिकारम्</span> - इलंगो आडिगल</li>
+                                <li>• <span class="important">मणिमेखलै</span> - सीतलै सत्तनार</li>
+                                <li>• <span class="important">एट्टुतोगै</span> - आठ संग्रह</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Chapter 2: मध्यकालीन भारत -->
+        <div class="bg-white rounded-lg shadow-lg p-8 mb-8">
+            <h2 class="text-3xl font-bold chapter-title mb-6 text-center">
+                <i class="fas fa-mosque mr-3"></i>अध्याय 2: मध्यकालीन भारत (Medieval India)
+            </h2>
+
+            <!-- दिल्ली सल्तनत -->
+            <div class="topic-card bg-gradient-to-r from-emerald-50 to-green-50 p-6 rounded-lg mb-6">
+                <h3 class="text-xl font-bold text-emerald-800 mb-4">
+                    <i class="fas fa-crown mr-2"></i>दिल्ली सल्तनत (1206-1526 ईस्वी)
+                </h3>
+                
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div>
+                        <h4 class="font-semibold text-emerald-700 mb-2">पांच वंश:</h4>
+                        
+                        <div class="bg-white p-4 rounded mb-3">
+                            <h5 class="font-semibold text-emerald-600">1. गुलाम वंश/मामलूक वंश (1206-1290):</h5>
+                            <ul class="text-sm space-y-1 mt-2">
+                                <li>• <span class="important">कुतुबुद्दीन ऐबक</span> (1206-1210)</li>
+                                <li>• <span class="important">इल्तुतमिश</span> (1211-1236)</li>
+                                <li>• <span class="important">रजिया सुल्तान</span> (1236-1240)</li>
+                                <li>• <span class="important">बलबन</span> (1266-1287)</li>
+                            </ul>
+                        </div>
+
+                        <div class="bg-white p-4 rounded mb-3">
+                            <h5 class="font-semibold text-emerald-600">2. खिलजी वंश (1290-1320):</h5>
+                            <ul class="text-sm space-y-1 mt-2">
+                                <li>• <span class="important">जलालुद्दीन खिलजी</span></li>
+                                <li>• <span class="important">अलाउद्दीन खिलजी</span> (1296-1316)</li>
+                                <li>• दक्षिण भारत में विस्तार</li>
+                                <li>• बाजार नियंत्रण नीति</li>
+                            </ul>
+                        </div>
+
+                        <div class="bg-white p-4 rounded">
+                            <h5 class="font-semibold text-emerald-600">3. तुगलक वंश (1320-1414):</h5>
+                            <ul class="text-sm space-y-1 mt-2">
+                                <li>• <span class="important">गयासुद्दीन तुगलक</span></li>
+                                <li>• <span class="important">मुहम्मद बिन तुगलक</span> - राजधानी स्थानांतरण</li>
+                                <li>• <span class="important">फिरोज शाह तुगलक</span></li>
+                                <li>• <span class="important">तैमूर का आक्रमण</span> (1398)</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <div class="bg-white p-4 rounded mb-3">
+                            <h5 class="font-semibold text-emerald-600">4. सैयद वंश (1414-1451):</h5>
+                            <ul class="text-sm space-y-1 mt-2">
+                                <li>• <span class="important">खिज्र खान</span></li>
+                                <li>• कमजोर केंद्रीय सत्ता</li>
+                                <li>• स्थानीय शासकों का उदय</li>
+                            </ul>
+                        </div>
+
+                        <div class="bg-white p-4 rounded mb-3">
+                            <h5 class="font-semibold text-emerald-600">5. लोदी वंश (1451-1526):</h5>
+                            <ul class="text-sm space-y-1 mt-2">
+                                <li>• <span class="important">बहलूल लोदी</span></li>
+                                <li>• <span class="important">सिकंदर लोदी</span></li>
+                                <li>• <span class="important">इब्राहिम लोदी</span> - पानीपत की प्रथम लड़ाई में पराजय</li>
+                            </ul>
+                        </div>
+
+                        <h4 class="font-semibold text-emerald-700 mb-2">प्रशासनिक व्यवस्था:</h4>
+                        <div class="bg-white p-4 rounded">
+                            <ul class="text-sm space-y-1">
+                                <li>• <span class="important">सुल्तान</span> - सर्वोच्च शासक</li>
+                                <li>• <span class="important">वजीर</span> - प्रधानमंत्री</li>
+                                <li>• <span class="important">आरिज-ए-मुमालिक</span> - सेना मंत्री</li>
+                                <li>• <span class="important">दीवान-ए-रसालत</span> - विदेश मंत्री</li>
+                                <li>• <span class="important">दीवान-ए-इंशा</span> - पत्राचार विभाग</li>
+                                <li>• <span class="important">इक्ता प्रणाली</span> - भूमि व्यवस्था</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-4">
+                    <h4 class="font-semibold text-emerald-700 mb-2">स्थापत्य कला:</h4>
+                    <div class="grid md:grid-cols-3 gap-4 text-sm">
+                        <div class="bg-white p-3 rounded">
+                            <strong>प्रमुख स्मारक:</strong>
+                            <ul class="mt-1">
+                                <li>• कुतुब मीनार</li>
+                                <li>• अलाई दरवाजा</li>
+                                <li>• तुगलकाबाद</li>
+                                <li>• फिरोज शाह कोटला</li>
+                            </ul>
+                        </div>
+                        <div class="bg-white p-3 rounded">
+                            <strong>विशेषताएं:</strong>
+                            <ul class="mt-1">
+                                <li>• मेहराब और गुंबद</li>
+                                <li>• ज्यामितीय अलंकरण</li>
+                                <li>• कुर्सी और मीनार</li>
+                                <li>• इंडो-इस्लामिक शैली</li>
+                            </ul>
+                        </div>
+                        <div class="bg-white p-3 rounded">
+                            <strong>निर्माण सामग्री:</strong>
+                            <ul class="mt-1">
+                                <li>• लाल बलुआ पत्थर</li>
+                                <li>• चूना पत्थर</li>
+                                <li>• संगमरमर</li>
+                                <li>• हिंदू मंदिरों की सामग्री</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- भक्ति आंदोलन -->
+            <div class="topic-card bg-gradient-to-r from-rose-50 to-pink-50 p-6 rounded-lg mb-6">
+                <h3 class="text-xl font-bold text-rose-800 mb-4">
+                    <i class="fas fa-heart mr-2"></i>भक्ति आंदोलन (7वीं-17वीं सदी)
+                </h3>
+                
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div>
+                        <h4 class="font-semibold text-rose-700 mb-2">दक्षिण भारतीय संत:</h4>
+                        
+                        <div class="bg-white p-4 rounded mb-3">
+                            <h5 class="font-semibold text-rose-600">आलवार संत (वैष्णव):</h5>
+                            <ul class="text-sm space-y-1 mt-2">
+                                <li>• <span class="important">आंडाल</span> - एकमात्र महिला आलवार</li>
+                                <li>• <span class="important">नम्मालवार</span></li>
+                                <li>• <span class="important">तिरुमलिशै</span></li>
+                                <li>• कुल 12 आलवार संत</li>
+                            </ul>
+                        </div>
+
+                        <div class="bg-white p-4 rounded mb-3">
+                            <h5 class="font-semibold text-rose-600">नयनार संत (शैव):</h5>
+                            <ul class="text-sm space-y-1 mt-2">
+                                <li>• <span class="important">अप्पार</span></li>
+                                <li>• <span class="important">सुंदरमूर्ति</span></li>
+                                <li>• <span class="important">तिरुज्ञानसंबंदर</span></li>
+                                <li>• कुल 63 नयनार संत</li>
+                            </ul>
+                        </div>
+
+                        <div class="bg-white p-4 rounded">
+                            <h5 class="font-semibold text-rose-600">आचार्य परंपरा:</h5>
+                            <ul class="text-sm space-y-1 mt-2">
+                                <li>• <span class="important">शंकराचार्य</span> - अद्वैतवाद</li>
+                                <li>• <span class="important">रामानुजाचार्य</span> - विशिष्टाद्वैत</li>
+                                <li>• <span class="important">मध्वाचार्य</span> - द्वैतवाद</li>
+                                <li>• <span class="important">निम्बार्काचार्य</span> - द्वैताद्वैत</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <h4 class="font-semibold text-rose-700 mb-2">उत्तर भारतीय संत:</h4>
+                        
+                        <div class="bg-white p-4 rounded mb-3">
+                            <h5 class="font-semibold text-rose-600">निर्गुण संत:</h5>
+                            <ul class="text-sm space-y-1 mt-2">
+                                <li>• <span class="important">कबीर दास</span> (1440-1518)</li>
+                                <li>• <span class="important">गुरु नानक</span> (1469-1539)</li>
+                                <li>• <span class="important">रहीम</span>, <span class="important">रसखान</span></li>
+                                <li>• एकेश्वरवाद की शिक्षा</li>
+                            </ul>
+                        </div>
+
+                        <div class="bg-white p-4 rounded mb-3">
+                            <h5 class="font-semibold text-rose-600">सगुण संत:</h5>
+                            <ul class="text-sm space-y-1 mt-2">
+                                <li>• <span class="important">तुलसीदास</span> - रामचरितमानस</li>
+                                <li>• <span class="important">सूरदास</span> - सूरसागर</li>
+                                <li>• <span class="important">मीराबाई</span> - कृष्ण भक्ति</li>
+                                <li>• <span class="important">चैतन्य महाप्रभु</span> - गौड़ीय वैष्णव</li>
+                            </ul>
+                        </div>
+
+                        <div class="bg-white p-4 rounded">
+                            <h5 class="font-semibold text-rose-600">महाराष्ट्रीय संत:</h5>
+                            <ul class="text-sm space-y-1 mt-2">
+                                <li>• <span class="important">ज्ञानेश्वर</span> - ज्ञानेश्वरी</li>
+                                <li>• <span class="important">नामदेव</span></li>
+                                <li>• <span class="important">एकनाथ</span></li>
+                                <li>• <span class="important">तुकाराम</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-4">
+                    <h4 class="font-semibold text-rose-700 mb-2">भक्ति आंदोलन के प्रभाव:</h4>
+                    <div class="grid md:grid-cols-3 gap-4 text-sm">
+                        <div class="bg-white p-3 rounded">
+                            <strong>सामाजिक प्रभाव:</strong>
+                            <ul class="mt-1">
+                                <li>• जातिवाद का विरोध</li>
+                                <li>• महिलाओं की स्थिति में सुधार</li>
+                                <li>• सामाजिक एकता</li>
+                                <li>• हिंदू-मुस्लिम एकता</li>
+                            </ul>
+                        </div>
+                        <div class="bg-white p-3 rounded">
+                            <strong>भाषा और साहित्य:</strong>
+                            <ul class="mt-1">
+                                <li>• स्थानीय भाषाओं का विकास</li>
+                                <li>• भक्ति काव्य परंपरा</li>
+                                <li>• कीर्तन और भजन</li>
+                                <li>• लोक संस्कृति को बढ़ावा</li>
+                            </ul>
+                        </div>
+                        <div class="bg-white p-3 rounded">
+                            <strong>धार्मिक प्रभाव:</strong>
+                            <ul class="mt-1">
+                                <li>• कर्मकांड का सरलीकरण</li>
+                                <li>• भक्ति की सर्वोच्चता</li>
+                                <li>• गुरु-शिष्य परंपरा</li>
+                                <li>• धार्मिक सुधार</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- मुगल साम्राज्य -->
+            <div class="topic-card bg-gradient-to-r from-purple-50 to-indigo-50 p-6 rounded-lg mb-6">
+                <h3 class="text-xl font-bold text-purple-800 mb-4">
+                    <i class="fas fa-chess-king mr-2"></i>मुगल साम्राज्य (1526-1857 ईस्वी)
+                </h3>
+                
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div>
+                        <h4 class="font-semibold text-purple-700 mb-2">प्रमुख शासक:</h4>
+                        
+                        <div class="bg-white p-4 rounded mb-3">
+                            <h5 class="font-semibold text-purple-600">बाबर (1526-1530):</h5>
+                            <ul class="text-sm space-y-1 mt-2">
+                                <li>• <span class="important">पानीपत की प्रथम लड़ाई</span> (1526)</li>
+                                <li>• <span class="important">खानवा का युद्ध</span> (1527) - राणा सांगा से</li>
+                                <li>• <span class="important">तुजुक-ए-बाबरी</span> - आत्मकथा</li>
+                                <li>• तोपखाना और तुलगुमा युद्ध नीति</li>
+                            </ul>
+                        </div>
+
+                        <div class="bg-white p-4 rounded mb-3">
+                            <h5 class="font-semibold text-purple-600">हुमायूं (1530-1540, 1555-1556):</h5>
+                            <ul class="text-sm space-y-1 mt-2">
+                                <li>• <span class="important">शेर शाह सूरी</span> से पराजय</li>
+                                <li>• 15 वर्ष निर्वासन</li>
+                                <li>• <span class="important">हुमायूंनामा</span> - गुलबदन बेगम</li>
+                                <li>• सीढ़ियों से गिरकर मृत्यु</li>
+                            </ul>
+                        </div>
+
+                        <div class="bg-white p-4 rounded">
+                            <h5 class="font-semibold text-purple-600">अकबर महान् (1556-1605):</h5>
+                            <ul class="text-sm space-y-1 mt-2">
+                                <li>• <span class="important">पानीपत की द्वितीय लड़ाई</span> (1556)</li>
+                                <li>• <span class="important">दीन-ए-इलाही</span> धर्म</li>
+                                <li>• <span class="important">सुलह-ए-कुल</span> नीति</li>
+                                <li>• <span class="important">फतेहपुर सीकरी</span> निर्माण</li>
+                                <li>• <span class="important">नवरत्न</span> - तानसेन, बीरबल, टोडरमल</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <div class="bg-white p-4 rounded mb-3">
+                            <h5 class="font-semibold text-purple-600">जहांगीर (1605-1627):</h5>
+                            <ul class="text-sm space-y-1 mt-2">
+                                <li>• <span class="important">न्याय की जंजीर</span></li>
+                                <li>• <span class="important">नूरजहां</span> से विवाह</li>
+                                <li>• <span class="important">तुजुक-ए-जहांगीरी</span></li>
+                                <li>• कैप्टन हॉकिन्स और सर टॉमस रो</li>
+                            </ul>
+                        </div>
+
+                        <div class="bg-white p-4 rounded mb-3">
+                            <h5 class="font-semibold text-purple-600">शाहजहां (1628-1658):</h5>
+                            <ul class="text-sm space-y-1 mt-2">
+                                <li>• <span class="important">ताजमहल</span> निर्माण</li>
+                                <li>• <span class="important">लाल किला, जामा मस्जिद</span></li>
+                                <li>• <span class="important">मोर सिंहासन</span></li>
+                                <li>• स्थापत्य कला का स्वर्ण युग</li>
+                            </ul>
+                        </div>
+
+                        <div class="bg-white p-4 rounded">
+                            <h5 class="font-semibold text-purple-600">औरंगजेब (1658-1707):</h5>
+                            <ul class="text-sm space-y-1 mt-2">
+                                <li>• <span class="important">आलमगीर</span> की उपाधि</li>
+                                <li>• <span class="important">जजिया कर</span> पुनः लगाया</li>
+                                <li>• <span class="important">फतवा-ए-आलमगीरी</span></li>
+                                <li>• सिखों और मराठों से संघर्ष</li>
+                                <li>• दक्षिण में 25 वर्ष</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-4">
+                    <h4 class="font-semibold text-purple-700 mb-2">मुगल प्रशासन:</h4>
+                    <div class="grid md:grid-cols-3 gap-4 text-sm">
+                        <div class="bg-white p-3 rounded">
+                            <strong>केंद्रीय प्रशासन:</strong>
+                            <ul class="mt-1">
+                                <li>• <span class="important">वकील</span> - प्रधानमंत्री</li>
+                                <li>• <span class="important">दीवान</span> - वित्तमंत्री</li>
+                                <li>• <span class="important">मीर बख्शी</span> - सेना प्रमुख</li>
+                                <li>• <span class="important">सद्र-उस-सुदूर</span> - न्यायाधीश</li>
+                            </ul>
+                        </div>
+                        <div class="bg-white p-3 rounded">
+                            <strong>मनसबदारी प्रथा:</strong>
+                            <ul class="mt-1">
+                                <li>• <span class="important">जात और सवार</span> रैंक</li>
+                                <li>• 33 श्रेणियां</li>
+                                <li>• नकद वेतन प्रणाली</li>
+                                <li>• दाग और हुलिया प्रथा</li>
+                            </ul>
+                        </div>
+                        <div class="bg-white p-3 rounded">
+                            <strong>भूमि व्यवस्था:</strong>
+                            <ul class="mt-1">
+                                <li>• <span class="important">खालसा</span> - शाही भूमि</li>
+                                <li>• <span class="important">जागीर</span> - अस्थायी भूमि</li>
+                                <li>• <span class="important">इनाम</span> - दान की भूमि</li>
+                                <li>• <span class="important">जमींदारी</span> - वंशानुगत</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- मराठा साम्राज्य -->
+            <div class="topic-card bg-gradient-to-r from-orange-50 to-yellow-50 p-6 rounded-lg mb-6">
+                <h3 class="text-xl font-bold text-orange-800 mb-4">
+                    <i class="fas fa-flag mr-2"></i>मराठा साम्राज्य (17वीं-18वीं सदी)
+                </h3>
+                
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div>
+                        <h4 class="font-semibold text-orange-700 mb-2">शिवाजी महाराज (1630-1680):</h4>
+                        
+                        <div class="bg-white p-4 rounded mb-3">
+                            <h5 class="font-semibold text-orange-600">प्रारंभिक जीवन:</h5>
+                            <ul class="text-sm space-y-1 mt-2">
+                                <li>• <span class="important">शहाजी भोंसले</span> के पुत्र</li>
+                                <li>• <span class="important">जीजाबाई</span> की शिक्षा</li>
+                                <li>• <span class="important">दादाजी कोंडदेव</span> के मार्गदर्शन में</li>
+                                <li>• 1674 में <span class="important">छत्रपति</span> की उपाधि</li>
+                            </ul>
+                        </div>
+
+                        <div class="bg-white p-4 rounded mb-3">
+                            <h5 class="font-semibold text-orange-600">सैन्य नीति:</h5>
+                            <ul class="text-sm space-y-1 mt-2">
+                                <li>• <span class="important">गुरिल्ला युद्ध</span> प्रणाली</li>
+                                <li>• <span class="important">गड़ी प्रणाली</span> - किले व्यवस्था</li>
+                                <li>• <span class="important">मावली सैनिक</span></li>
+                                <li>• <span class="important">नौसेना</span> का निर्माण</li>
+                            </ul>
+                        </div>
+
+                        <div class="bg-white p-4 rounded">
+                            <h5 class="font-semibold text-orange-600">प्रशासनिक सुधार:</h5>
+                            <ul class="text-sm space-y-1 mt-2">
+                                <li>• <span class="important">अष्टप्रधान मंडल</span></li>
+                                <li>• <span class="important">चौथ और सरदेशमुखी</span></li>
+                                <li>• <span class="important">रयतवाड़ी प्रणाली</span></li>
+                                <li>• धार्मिक सहिष्णुता</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <h4 class="font-semibold text-orange-700 mb-2">अष्टप्रधान मंडल:</h4>
+                        
+                        <div class="bg-white p-4 rounded mb-3">
+                            <ul class="text-sm space-y-1">
+                                <li>• <span class="important">पेशवा</span> - प्रधानमंत्री</li>
+                                <li>• <span class="important">अमात्य</span> - वित्तमंत्री</li>
+                                <li>• <span class="important">सचिव</span> - सचिवालय प्रमुख</li>
+                                <li>• <span class="important">मंत्री</span> - गृहमंत्री</li>
+                                <li>• <span class="important">सेनापति</span> - सेना प्रमुख</li>
+                                <li>• <span class="important">सुमंत</span> - विदेशमंत्री</li>
+                                <li>• <span class="important">न्यायाधीश</span> - न्यायमंत्री</li>
+                                <li>• <span class="important">पंडितराव</span> - धर्मगुरु</li>
+                            </ul>
+                        </div>
+
+                        <h4 class="font-semibold text-orange-700 mb-2">पेशवा काल (1713-1818):</h4>
+                        <div class="bg-white p-4 rounded mb-3">
+                            <ul class="text-sm space-y-1">
+                                <li>• <span class="important">बालाजी विश्वनाथ</span> - प्रथम पेशवा</li>
+                                <li>• <span class="important">बाजीराव प्रथम</span> - महान योद्धा</li>
+                                <li>• <span class="important">बालाजी बाजीराव</span> (नानासाहेब)</li>
+                                <li>• <span class="important">पानीपत की तीसरी लड़ाई</span> (1761)</li>
+                            </ul>
+                        </div>
+
+                        <div class="bg-white p-4 rounded">
+                            <h4 class="font-semibold text-orange-600">प्रमुख सरदार परिवार:</h4>
+                            <ul class="text-sm space-y-1">
+                                <li>• <span class="important">भोंसले</span> - नागपुर</li>
+                                <li>• <span class="important">गायकवाड़</span> - बड़ौदा</li>
+                                <li>• <span class="important">होल्कर</span> - इंदौर</li>
+                                <li>• <span class="important">सिंधिया</span> - ग्वालियर</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-4">
+                    <h4 class="font-semibold text-orange-700 mb-2">मराठा प्रभाव और विरासत:</h4>
+                    <div class="grid md:grid-cols-3 gap-4 text-sm">
+                        <div class="bg-white p-3 rounded">
+                            <strong>सैन्य योगदान:</strong>
+                            <ul class="mt-1">
+                                <li>• गुरिल्ला युद्ध की परंपरा</li>
+                                <li>• स्वराज की अवधारणा</li>
+                                <li>• मुगल शक्ति को चुनौती</li>
+                                <li>• स्वदेशी नौसेना</li>
+                            </ul>
+                        </div>
+                        <div class="bg-white p-3 rounded">
+                            <strong>प्रशासनिक सुधार:</strong>
+                            <ul class="mt-1">
+                                <li>• धर्मनिरपेक्ष प्रशासन</li>
+                                <li>• किसान हितैषी नीति</li>
+                                <li>• मराठी भाषा का प्रोत्साहन</li>
+                                <li>• न्यायपूर्ण कर व्यवस्था</li>
+                            </ul>
+                        </div>
+                        <div class="bg-white p-3 rounded">
+                            <strong>सांस्कृतिक प्रभाव:</strong>
+                            <ul class="mt-1">
+                                <li>• हिंदू पद पादशाही</li>
+                                <li>• भारतीय त्योहारों का उत्सव</li>
+                                <li>• मराठी साहित्य का विकास</li>
+                                <li>• गणपति उत्सव परंपरा</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Chapter 3: आधुनिक भारत -->
+        <div class="bg-white rounded-lg shadow-lg p-8 mb-8">
+            <h2 class="text-3xl font-bold chapter-title mb-6 text-center">
+                <i class="fas fa-flag mr-3"></i>अध्याय 3: आधुनिक भारत (Modern India)
+            </h2>
+
+            <!-- यूरोपीय आगमन -->
+            <div class="topic-card bg-gradient-to-r from-blue-50 to-indigo-50 p-6 rounded-lg mb-6">
+                <h3 class="text-xl font-bold text-blue-800 mb-4">
+                    <i class="fas fa-ship mr-2"></i>यूरोपीय आगमन और ईस्ट इंडिया कंपनी
+                </h3>
+                
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div>
+                        <h4 class="font-semibold text-blue-700 mb-2">यूरोपीय कंपनियों का आगमन:</h4>
+                        
+                        <div class="bg-white p-4 rounded mb-3">
+                            <h5 class="font-semibold text-blue-600">पुर्तगाली (1498):</h5>
+                            <ul class="text-sm space-y-1 mt-2">
+                                <li>• <span class="important">वास्को डी गामा</span> - कालीकट पहुंचा</li>
+                                <li>• <span class="important">अल्फांसो डी अल्बुकर्क</span> - गोवा पर कब्जा</li>
+                                <li>• प्रथम यूरोपीय शक्ति</li>
+                                <li>• व्यापार और ईसाई धर्म प्रचार</li>
+                            </ul>
+                        </div>
+
+                        <div class="bg-white p-4 rounded mb-3">
+                            <h5 class="font-semibold text-blue-600">डच (1602):</h5>
+                            <ul class="text-sm space-y-1 mt-2">
+                                <li>• <span class="important">डच ईस्ट इंडिया कंपनी</span></li>
+                                <li>• इंडोनेशिया पर ध्यान</li>
+                                <li>• पुलीकट, नागपट्टिनम</li>
+                                <li>• मसाला व्यापार</li>
+                            </ul>
+                        </div>
+
+                        <div class="bg-white p-4 rounded">
+                            <h5 class="font-semibold text-blue-600">फ्रांसीसी (1664):</h5>
+                            <ul class="text-sm space-y-1 mt-2">
+                                <li>• <span class="important">फ्रेंच ईस्ट इंडिया कंपनी</span></li>
+                                <li>• <span class="important">पांडिचेरी</span> - मुख्यालय</li>
+                                <li>• <span class="important">डुप्ले</span> - गवर्नर</li>
+                                <li>• कर्नाटक युद्ध</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <h4 class="font-semibold text-blue-700 mb-2">ब्रिटिश ईस्ट इंडिया कंपनी (1600):</h4>
+                        
+                        <div class="bg-white p-4 rounded mb-3">
+                            <h5 class="font-semibold text-blue-600">प्रारंभिक स्थापना:</h5>
+                            <ul class="text-sm space-y-1 mt-2">
+                                <li>• <span class="important">महारानी एलिजाबेथ I</span> का चार्टर</li>
+                                <li>• <span class="important">कैप्टन हॉकिन्स</span> - जहांगीर के दरबार में</li>
+                                <li>• <span class="important">सर टॉमस रो</span> - जहांगीर से संधि</li>
+                                <li>• सूरत में प्रथम फैक्ट्री (1613)</li>
+                            </ul>
+                        </div>
+
+                        <div class="bg-white p-4 rounded mb-3">
+                            <h5 class="font-semibold text-blue-600">प्रेसीडेंसी की स्थापना:</h5>
+                            <ul class="text-sm space-y-1 mt-2">
+                                <li>• <span class="important">मद्रास</span> (1639) - फ्रांसिस डे</li>
+                                <li>• <span class="important">बंबई</span> (1661) - दहेज में मिला</li>
+                                <li>• <span class="important">कलकत्ता</span> (1690) - जॉब चार्नॉक</li>
+                                <li>• तीन प्रेसीडेंसी व्यवस्था</li>
+                            </ul>
+                        </div>
+
+                        <div class="bg-white p-4 rounded">
+                            <h5 class="font-semibold text-blue-600">कर्नाटक युद्ध (1746-1763):</h5>
+                            <ul class="text-sm space-y-1 mt-2">
+                                <li>• <span class="important">प्रथम कर्नाटक युद्ध</span> (1746-48)</li>
+                                <li>• <span class="important">द्वितीय कर्नाटक युद्ध</span> (1749-54)</li>
+                                <li>• <span class="important">तृतीय कर्नाटक युद्ध</span> (1756-63)</li>
+                                <li>• <span class="important">वांडीवाश की लड़ाई</span> (1760)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- प्लासी और बक्सर -->
+            <div class="topic-card bg-gradient-to-r from-red-50 to-pink-50 p-6 rounded-lg mb-6">
+                <h3 class="text-xl font-bold text-red-800 mb-4">
+                    <i class="fas fa-sword mr-2"></i>प्लासी और बक्सर की लड़ाई
+                </h3>
+                
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div>
+                        <h4 class="font-semibold text-red-700 mb-2">प्लासी की लड़ाई (1757):</h4>
+                        
+                        <div class="bg-white p-4 rounded mb-3">
+                            <h5 class="font-semibold text-red-600">पृष्ठभूमि:</h5>
+                            <ul class="text-sm space-y-1 mt-2">
+                                <li>• <span class="important">सिराजुद्दौला</span> - बंगाल का नवाब</li>
+                                <li>• <span class="important">काली कोठरी की घटना</span> (1756)</li>
+                                <li>• किलेबंदी का विवाद</li>
+                                <li>• दस्तक का दुरुपयोग</li>
+                            </ul>
+                        </div>
+
+                        <div class="bg-white p-4 rounded mb-3">
+                            <h5 class="font-semibold text-red-600">युद्ध और परिणाम:</h5>
+                            <ul class="text-sm space-y-1 mt-2">
+                                <li>• <span class="important">रॉबर्ट क्लाइव</span> - अंग्रेजी सेनापति</li>
+                                <li>• <span class="important">मीर जाफर</span> का विश्वासघात</li>
+                                <li>• सिराजुद्दौला की पराजय और मृत्यु</li>
+                                <li>• बंगाल में अंग्रेजी प्रभुत्व</li>
+                            </ul>
+                        </div>
+
+                        <div class="bg-white p-4 rounded">
+                            <h5 class="font-semibold text-red-600">महत्व:</h5>
+                            <ul class="text-sm space-y-1 mt-2">
+                                <li>• भारत में ब्रिटिश राज की नींव</li>
+                                <li>• व्यापारी से शासक बनने की शुरुआत</li>
+                                <li>• बंगाल की संपदा पर नियंत्रण</li>
+                                <li>• द्विशासन व्यवस्था की शुरुआत</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <h4 class="font-semibold text-red-700 mb-2">बक्सर की लड़ाई (1764):</h4>
+                        
+                        <div class="bg-white p-4 rounded mb-3">
+                            <h5 class="font-semibold text-red-600">पृष्ठभूमि:</h5>
+                            <ul class="text-sm space-y-1 mt-2">
+                                <li>• <span class="important">मीर कासिम</span> - बंगाल का नया नवाब</li>
+                                <li>• दस्तक के दुरुपयोग पर रोक</li>
+                                <li>• त्रिगुट का गठन</li>
+                                <li>• हेक्टर मुनरो - अंग्रेजी सेनापति</li>
+                            </ul>
+                        </div>
+
+                        <div class="bg-white p-4 rounded mb-3">
+                            <h5 class="font-semibold text-red-600">त्रिगुट शक्तियां:</h5>
+                            <ul class="text-sm space-y-1 mt-2">
+                                <li>• <span class="important">मीर कासिम</span> - बंगाल का नवाब</li>
+                                <li>• <span class="important">शुजाउद्दौला</span> - अवध का नवाब</li>
+                                <li>• <span class="important">शाह आलम द्वितीय</span> - मुगल बादशाह</li>
+                                <li>• तीनों की संयुक्त शक्ति</li>
+                            </ul>
+                        </div>
+
+                        <div class="bg-white p-4 rounded">
+                            <h5 class="font-semibold text-red-600">परिणाम:</h5>
+                            <ul class="text-sm space-y-1 mt-2">
+                                <li>• <span class="important">इलाहाबाद की संधि</span> (1765)</li>
+                                <li>• <span class="important">दीवानी अधिकार</span> प्राप्त</li>
+                                <li>• बंगाल, बिहार, उड़ीसा पर नियंत्रण</li>
+                                <li>• वास्तविक राजनीतिक प्रभुत्व</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-4">
+                    <h4 class="font-semibold text-red-700 mb-2">द्विशासन व्यवस्था (1765-1772):</h4>
+                    <div class="grid md:grid-cols-3 gap-4 text-sm">
+                        <div class="bg-white p-3 rounded">
+                            <strong>व्यवस्था:</strong>
+                            <ul class="mt-1">
+                                <li>• कंपनी को दीवानी अधिकार</li>
+                                <li>• नवाब को निजामत अधिकार</li>
+                                <li>• राजस्व संग्रह का अधिकार</li>
+                                <li>• शासन की दोहरी व्यवस्था</li>
+                            </ul>
+                        </div>
+                        <div class="bg-white p-3 rounded">
+                            <strong>समस्याएं:</strong>
+                            <ul class="mt-1">
+                                <li>• अकाल और दुर्भिक्ष</li>
+                                <li>• भ्रष्टाचार में वृद्धि</li>
+                                <li>• प्रशासनिक अव्यवस्था</li>
+                                <li>• कृषि का नुकसान</li>
+                            </ul>
+                        </div>
+                        <div class="bg-white p-3 rounded">
+                            <strong>अंत:</strong>
+                            <ul class="mt-1">
+                                <li>• वारेन हेस्टिंग्स का सुधार</li>
+                                <li>• प्रत्यक्ष शासन की शुरुआत</li>
+                                <li>• नवाब की शक्ति समाप्त</li>
+                                <li>• कंपनी राज की स्थापना</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 1857 की क्रांति -->
+            <div class="topic-card bg-gradient-to-r from-orange-50 to-red-50 p-6 rounded-lg mb-6">
+                <h3 class="text-xl font-bold text-orange-800 mb-4">
+                    <i class="fas fa-fire mr-2"></i>1857 की महान् क्रांति
+                </h3>
+                
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div>
+                        <h4 class="font-semibold text-orange-700 mb-2">क्रांति के कारण:</h4>
+                        
+                        <div class="bg-white p-4 rounded mb-3">
+                            <h5 class="font-semibold text-orange-600">राजनीतिक कारण:</h5>
+                            <ul class="text-sm space-y-1 mt-2">
+                                <li>• <span class="important">गोद निषेध नीति</span> (डॉक्ट्रिन ऑफ लैप्स)</li>
+                                <li>• <span class="important">झांसी, सतारा, नागपुर</span> का विलय</li>
+                                <li>• <span class="important">वाजिद अली शाह</span> का निर्वासन</li>
+                                <li>• राजाओं और नवाबों की सत्ता समाप्ति</li>
+                            </ul>
+                        </div>
+
+                        <div class="bg-white p-4 rounded mb-3">
+                            <h5 class="font-semibold text-orange-600">आर्थिक कारण:</h5>
+                            <ul class="text-sm space-y-1 mt-2">
+                                <li>• भारतीय हस्तशिल्प का विनाश</li>
+                                <li>• <span class="important">स्थायी बंदोबस्त</span> से किसान परेशान</li>
+                                <li>• भारी कर और मालगुजारी</li>
+                                <li>• अकाल और दुर्भिक्ष</li>
+                            </ul>
+                        </div>
+
+                        <div class="bg-white p-4 rounded">
+                            <h5 class="font-semibold text-orange-600">सामाजिक-धार्मिक कारण:</h5>
+                            <ul class="text-sm space-y-1 mt-2">
+                                <li>• <span class="important">सती प्रथा निषेध</span> (1829)</li>
+                                <li>• <span class="important">विधवा पुनर्विवाह</span> कानून</li>
+                                <li>• ईसाई मिशनरियों की गतिविधियां</li>
+                                <li>• पश्चिमी शिक्षा का विरोध</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <h4 class="font-semibrant text-orange-700 mb-2">क्रांति की घटनाएं:</h4>
+                        
+                        <div class="bg-white p-4 rounded mb-3">
+                            <h5 class="font-semibold text-orange-600">तत्कालीन कारण:</h5>
+                            <ul class="text-sm space-y-1 mt-2">
+                                <li>• <span class="important">एनफील्ड राइफल</span> और चर्बी का मुद्दा</li>
+                                <li>• <span class="important">मंगल पांडे</span> का विद्रोह (29 मार्च 1857)</li>
+                                <li>• <span class="important">बैरकपुर छावनी</span> में विद्रोह</li>
+                                <li>• 10 मई 1857 - मेरठ में विद्रोह</li>
+                            </ul>
+                        </div>
+
+                        <div class="bg-white p-4 rounded mb-3">
+                            <h5 class="font-semibold text-orange-600">प्रमुख नेता और केंद्र:</h5>
+                            <ul class="text-sm space-y-1 mt-2">
+                                <li>• <span class="important">बहादुर शाह जफर</span> - दिल्ली</li>
+                                <li>• <span class="important">रानी लक्ष्मीबाई</span> - झांसी</li>
+                                <li>• <span class="important">नाना साहेब</span> - कानपुर</li>
+                                <li>• <span class="important">तात्या टोपे</span> - कानपुर</li>
+                                <li>• <span class="important">बेगम हजरत महल</span> - लखनऊ</li>
+                                <li>• <span class="important">कुंवर सिंह</span> - बिहार</li>
+                            </ul>
+                        </div>
+
+                        <div class="bg-white p-4 rounded">
+                            <h5 class="font-semibold text-orange-600">असफलता के कारण:</h5>
+                            <ul class="text-sm space-y-1 mt-2">
+                                <li>• एकता और संगठन का अभाव</li>
+                                <li>• आधुनिक हथियारों की कमी</li>
+                                <li>• अंग्रेजों की बेहतर रणनीति</li>
+                                <li>• सिखों और गुरखों का साथ न देना</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-4">
+                    <h4 class="font-semibold text-orange-700 mb-2">1857 की क्रांति के परिणाम:</h4>
+                    <div class="grid md:grid-cols-3 gap-4 text-sm">
+                        <div class="bg-white p-3 rounded">
+                            <strong>राजनीतिक परिवर्तन:</strong>
+                            <ul class="mt-1">
+                                <li>• ईस्ट इंडिया कंपनी का शासन समाप्त</li>
+                                <li>• भारत सरकार अधिनियम 1858</li>
+                                <li>• वायसराय प्रणाली की शुरुआत</li>
+                                <li>• ब्रिटिश क्राउन का प्रत्यक्ष शासन</li>
+                            </ul>
+                        </div>
+                        <div class="bg-white p-3 rounded">
+                            <strong>सैन्य सुधार:</strong>
+                            <ul class="mt-1">
+                                <li>• भारतीय सेना में अनुपात नीति</li>
+                                <li>• यूरोपीय सैनिकों की संख्या बढ़ाई</li>
+                                <li>• तोपखाना यूरोपीयों के पास</li>
+                                <li>• विभिन्न जातियों को मिलाया</li>
+                            </ul>
+                        </div>
+                        <div class="bg-white p-3 rounded">
+                            <strong>सामाजिक नीति:</strong>
+                            <ul class="mt-1">
+                                <li>• धार्मिक गैर-हस्तक्षेप की नीति</li>
+                                <li>• महारानी की उद्घोषणा 1858</li>
+                                <li>• राजाओं के अधिकार स्वीकार</li>
+                                <li>• सामाजिक सुधार धीमे</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- स्वतंत्रता संग्राम -->
+            <div class="topic-card bg-gradient-to-r from-green-50 to-teal-50 p-6 rounded-lg mb-6">
+                <h3 class="text-xl font-bold text-green-800 mb-4">
+                    <i class="fas fa-fist-raised mr-2"></i>स्वतंत्रता संग्राम और गांधी युग
+                </h3>
+                
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div>
+                        <h4 class="font-semibold text-green-700 mb-2">कांग्रेस की स्थापना और आरंभिक चरण:</h4>
+                        
+                        <div class="bg-white p-4 rounded mb-3">
+                            <h5 class="font-semibold text-green-600">स्थापना (1885):</h5>
+                            <ul class="text-sm space-y-1 mt-2">
+                                <li>• <span class="important">ए.ओ. ह्यूम</span> - संस्थापक</li>
+                                <li>• <span class="important">व्योमेश चंद्र बनर्जी</span> - प्रथम अध्यक्ष</li>
+                                <li>• बंबई में प्रथम अधिवेशन</li>
+                                <li>• 72 प्रतिनिधि</li>
+                            </ul>
+                        </div>
+
+                        <div class="bg-white p-4 rounded mb-3">
+                            <h5 class="font-semibold text-green-600">नरमपंथी नेता (1885-1905):</h5>
+                            <ul class="text-sm space-y-1 mt-2">
+                                <li>• <span class="important">दादाभाई नौरोजी</span> - धन निकासी सिद्धांत</li>
+                                <li>• <span class="important">फिरोजशाह मेहता</span></li>
+                                <li>• <span class="important">गोपालकृष्ण गोखले</span></li>
+                                <li>• <span class="important">सुरेंद्रनाथ बनर्जी</span></li>
+                            </ul>
+                        </div>
+
+                        <div class="bg-white p-4 rounded">
+                            <h5 class="font-semibold text-green-600">गरमपंथी नेता (1905-1920):</h5>
+                            <ul class="text-sm space-y-1 mt-2">
+                                <li>• <span class="important">बाल गंगाधर तिलक</span> - स्वराज्य मेरा जन्मसिद्ध अधिकार है</li>
+                                <li>• <span class="important">लाला लाजपत राय</span> - पंजाब केसरी</li>
+                                <li>• <span class="important">बिपिन चंद्र पाल</span></li>
+                                <li>• <span class="important">अरविंद घोष</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <h4 class="font-semibold text-green-700 mb-2">गांधी युग के आंदोलन:</h4>
+                        
+                        <div class="bg-white p-4 rounded mb-3">
+                            <h5 class="font-semibold text-green-600">असहयोग आंदोलन (1920-22):</h5>
+                            <ul class="text-sm space-y-1 mt-2">
+                                <li>• <span class="important">खिलाफत आंदोलन</span> का समर्थन</li>
+                                <li>• <span class="important">जलियांवाला बाग</span> का विरोध</li>
+                                <li>• <span class="important">चौरी चौरा</span> की घटना (1922)</li>
+                                <li>• स्वदेशी, स्वराज, सत्याग्रह</li>
+                            </ul>
+                        </div>
+
+                        <div class="bg-white p-4 rounded mb-3">
+                            <h5 class="font-semibold text-green-600">सविनय अवज्ञा आंदोलन (1930-34):</h5>
+                            <ul class="text-sm space-y-1 mt-2">
+                                <li>• <span class="important">दांडी मार्च</span> (12 मार्च-6 अप्रैल 1930)</li>
+                                <li>• <span class="important">नमक सत्याग्रह</span></li>
+                                <li>• <span class="important">गांधी-इरविन समझौता</span> (1931)</li>
+                                <li>• पूर्ण स्वराज की मांग</li>
+                            </ul>
+                        </div>
+
+                        <div class="bg-white p-4 rounded">
+                            <h5 class="font-semibold text-green-600">भारत छोड़ो आंदोलन (1942):</h5>
+                            <ul class="text-sm space-y-1 mt-2">
+                                <li>• <span class="important">"करो या मरो"</span> का नारा</li>
+                                <li>• <span class="important">अगस्त क्रांति</span></li>
+                                <li>• व्यापक जन आंदोलन</li>
+                                <li>• नेताओं की गिरफ्तारी</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-4">
+                    <h4 class="font-semibold text-green-700 mb-2">अन्य महत्वपूर्ण आंदोलन:</h4>
+                    <div class="grid md:grid-cols-3 gap-4 text-sm">
+                        <div class="bg-white p-3 rounded">
+                            <strong>क्रांतिकारी आंदोलन:</strong>
+                            <ul class="mt-1">
+                                <li>• <span class="important">चंद्रशेखर आजाद</span></li>
+                                <li>• <span class="important">भगत सिंह</span></li>
+                                <li>• <span class="important">राजगुरु, सुखदेव</span></li>
+                                <li>• <span class="important">सुभाष चंद्र बोस</span> - आजाद हिंद फौज</li>
+                            </ul>
+                        </div>
+                        <div class="bg-white p-3 rounded">
+                            <strong>किसान आंदोलन:</strong>
+                            <ul class="mt-1">
+                                <li>• चंपारण सत्याग्रह (1917)</li>
+                                <li>• खेड़ा सत्याग्रह (1918)</li>
+                                <li>• बारदोली सत्याग्रह (1928)</li>
+                                <li>• तेभागा आंदोलन</li>
+                            </ul>
+                        </div>
+                        <div class="bg-white p-3 rounded">
+                            <strong>मजदूर आंदोलन:</strong>
+                            <ul class="mt-1">
+                                <li>• अहमदाबाद मिल हड़ताल</li>
+                                <li>• एटक की स्थापना</li>
+                                <li>• मजदूर संघों का गठन</li>
+                                <li>• श्रमिक अधिकारों की लड़ाई</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- विभाजन और स्वतंत्रता -->
+            <div class="topic-card bg-gradient-to-r from-purple-50 to-pink-50 p-6 rounded-lg mb-6">
+                <h3 class="text-xl font-bold text-purple-800 mb-4">
+                    <i class="fas fa-calendar-day mr-2"></i>विभाजन और स्वतंत्रता (1947)
+                </h3>
+                
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div>
+                        <h4 class="font-semibold text-purple-700 mb-2">विभाजन के कारण:</h4>
+                        
+                        <div class="bg-white p-4 rounded mb-3">
+                            <h5 class="font-semibold text-purple-600">मुस्लिम लीग और द्विराष्ट्र सिद्धांत:</h5>
+                            <ul class="text-sm space-y-1 mt-2">
+                                <li>• <span class="important">मुहम्मद अली जिन्नह</span> - कायदे आजम</li>
+                                <li>• <span class="important">लाहौर प्रस्ताव</span> (1940)</li>
+                                <li>• <span class="important">द्विराष्ट्र सिद्धांत</span> का प्रतिपादन</li>
+                                <li>• <span class="important">"डायरेक्ट एक्शन डे"</span> (16 अगस्त 1946)</li>
+                            </ul>
+                        </div>
+
+                        <div class="bg-white

@@ -658,6 +658,49 @@
     
   
     <script>
+     // Check login status and update UI
+function checkLoginStatus() {
+    const isLoggedIn = localStorage.getItem('isLoggedIn') === 'true';
+    const loginButton = document.getElementById('loginButton');
+    const userDisplay = document.getElementById('userDisplay');
+    const userName = document.getElementById('userName');
+    const dashboardBtn = document.getElementById('dashboardBtn');
+    
+    if (isLoggedIn) {
+        // Hide login button, show user info and dashboard
+        loginButton.classList.add('hidden');
+        userDisplay.classList.remove('hidden');
+        dashboardBtn.classList.remove('hidden');
+        
+        // Get user name from localStorage or use default
+        const storedName = localStorage.getItem('userName') || 'User';
+        userName.textContent = storedName;
+    } else {
+        // Show login button, hide user info and dashboard
+        loginButton.classList.remove('hidden');
+        userDisplay.classList.add('hidden');
+        dashboardBtn.classList.add('hidden');
+    }
+}
+
+// Call this function when page loads and after login
+checkLoginStatus();
+
+// In your login.html or login success handler:
+function handleLoginSuccess(userName) {
+    localStorage.setItem('isLoggedIn', 'true');
+    localStorage.setItem('userName', userName);
+    checkLoginStatus();
+    toggleLoginModal(); // Close the modal
+}
+
+// Logout function (you can add this to your dashboard page)
+function logout() {
+    localStorage.removeItem('isLoggedIn');
+    localStorage.removeItem('userName');
+    checkLoginStatus();
+}
+        
         // Theme Toggle Functionality
         const themeToggle = document.getElementById('themeToggle');
         const body = document.body;

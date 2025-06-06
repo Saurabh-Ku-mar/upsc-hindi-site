@@ -911,6 +911,19 @@
         window.addEventListener('popstate', () => {
             showLogin();
         });
+
+         // When login is successful in the iframe
+window.parent.postMessage({
+    type: 'LOGIN_SUCCESS',
+    userName: 'User Name' // Replace with actual user name
+}, '*');
+
+// In your main page JavaScript, add this message listener:
+window.addEventListener('message', function(event) {
+    if (event.data.type === 'LOGIN_SUCCESS') {
+        handleLoginSuccess(event.data.userName);
+    }
+ });
         
         // Keyboard shortcuts
         document.addEventListener('keydown', (e) => {

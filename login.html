@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Glowing Animated Login/Signup</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap");
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background: #252432;
+    }
+    @property --a {
+      syntax: "<angle>";
+      inherits: false;
+      initial-value: 0deg;
+    }
+    .box {
+      position: relative;
+      width: 400px;
+      height: 200px;
+      background: repeating-conic-gradient(
+        from var(--a),
+        #ff2770 0%,
+        #ff2770 5%,
+        transparent 5%,
+        transparent 40%,
+        #ff2770 50%
+      );
+      filter: drop-shadow(0 15px 50px #000);
+      animation: rotating 4s linear infinite;
+      border-radius: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: 0.5s;
+    }
+    .box:hover {
+      width: 450px;
+      height: 500px;
+    }
+    @keyframes rotating {
+      0% { --a: 0deg; }
+      100% { --a: 360deg; }
+    }
+    .box::before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: repeating-conic-gradient(
+        from var(--a),
+        #45f3ff 0%,
+        #45f3ff 5%,
+        transparent 5%,
+        transparent 40%,
+        #45f3ff 50%
+      );
+      filter: drop-shadow(0 15px 50px #000);
+      border-radius: 20px;
+      animation: rotating 4s linear infinite;
+      animation-delay: -1s;
+    }
+    .box::after {
+      content: "";
+      position: absolute;
+      inset: 4px;
+      background: #2d2d39;
+      border-radius: 15px;
+      border: 8px solid #25252b;
+    }
+    .login {
+      position: absolute;
+      inset: 60px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 10px;
+      flex-direction: column;
+      background: rgba(0, 0, 0, 0.2);
+      z-index: 1000;
+      box-shadow: inset 0 10px 20px rgba(0, 0, 0, 0.5);
+      border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+      transition: 0.5s;
+      color: #fff;
+      overflow: hidden;
+    }
+    .box:hover .login {
+      inset: 40px;
+    }
+    .loginBx {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      transform: translateY(126px);
+      gap: 20px;
+      width: 70%;
+      transition: 0.5s;
+    }
+    .box:hover .loginBx {
+      transform: translateY(0px);
+    }
+    .loginBx h2 {
+      text-transform: uppercase;
+      letter-spacing: 0.2em;
+      font-weight: 600;
+    }
+    .loginBx h2 i {
+      color: #ff2770;
+      text-shadow: 0 0 5px #ff2770, 0 0 30px #ff2770;
+    }
+    .loginBx input {
+      width: 100%;
+      padding: 10px 20px;
+      outline: none;
+      font-size: 1em;
+      color: #fff;
+      background: rgba(0, 0, 0, 0.1);
+      border: 2px solid #fff;
+      border-radius: 30px;
+    }
+    .loginBx input::placeholder {
+      color: #999;
+    }
+    .loginBx input[type="submit"] {
+      background: #45f3ff;
+      border: none;
+      font-weight: 500;
+      color: #111;
+      cursor: pointer;
+      transition: 0.5s;
+    }
+    .loginBx input[type="submit"]:hover {
+      box-shadow: 0 0 10px #45f3ff, 0 0 60px #45f3ff;
+    }
+    .group {
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+    }
+    .group a {
+      color: #fff;
+      text-decoration: none;
+    }
+    .group a:nth-child(2) {
+      color: #ff2770;
+      font-weight: 600;
+    }
+  </style>
+
+  <!-- Firebase SDK -->
+  <script src="https://www.gstatic.com/firebasejs/10.12.1/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.12.1/firebase-auth-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.12.1/firebase-firestore-compat.js"></script>
+</head>
+
+<body>
+  <div class="box">
+    <!-- Login Form -->
+    <div class="login" id="loginForm">
+      <div class="loginBx">
+        <h2><i class="fa-solid fa-right-to-bracket"></i> Login <i class="fa-solid fa-heart"></i></h2>
+        <input type="email" placeholder="Email" id="loginEmail">
+        <input type="password" placeholder="Password" id="loginPass">
+        <input type="submit" value="Sign in" onclick="loginUser()" />
+        <div class="group">
+          <a href="#" onclick="resetPassword()">Forgot Password?</a>
+          <a href="#" onclick="toggleForms()">Sign up</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Signup Form -->
+    <div class="login" id="signupForm" style="display:none;">
+      <div class="loginBx">
+        <h2><i class="fa-solid fa-user-plus"></i> Sign Up</h2>
+        <input type="text" placeholder="Full Name" id="signupName">
+        <input type="email" placeholder="Email" id="signupEmail">
+        <input type="password" placeholder="Password" id="signupPass">
+        <input type="submit" value="Create Account" onclick="signupUser()" />
+        <div class="group">
+          <a href="#" onclick="toggleForms()">Already have an account?</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Dashboard (Hidden initially) -->
+    <div class="login" id="dashboard" style="display:none;">
+      <div class="loginBx">
+        <h2>Welcome 🎉</h2>
+        <p style="text-align:center; margin-bottom:20px;">You are now logged in.</p>
+        <input type="submit" value="Logout" onclick="logout()" />
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Your Firebase Config
+    const firebaseConfig = {
+      apiKey: "YOUR_API_KEY",
+      authDomain: "YOUR_PROJECT.firebaseapp.com",
+      projectId: "YOUR_PROJECT_ID",
+      storageBucket: "YOUR_PROJECT.appspot.com",
+      messagingSenderId: "SENDER_ID",
+      appId: "APP_ID"
+    };
+    firebase.initializeApp(firebaseConfig);
+    const auth = firebase.auth();
+    const db = firebase.firestore();
+
+    function toggleForms() {
+      const login = document.getElementById('loginForm');
+      const signup = document.getElementById('signupForm');
+      login.style.display = login.style.display === 'none' ? 'flex' : 'none';
+      signup.style.display = signup.style.display === 'none' ? 'flex' : 'none';
+    }
+
+    function signupUser() {
+      const name = document.getElementById('signupName').value;
+      const email = document.getElementById('signupEmail').value;
+      const pass = document.getElementById('signupPass').value;
+      auth.createUserWithEmailAndPassword(email, pass).then(cred => {
+        return db.collection('users').doc(cred.user.uid).set({
+          name: name,
+          email: email,
+          createdAt: new Date()
+        });
+      }).then(() => {
+        alert('Account created! Please login.');
+        toggleForms();
+      }).catch(err => alert(err.message));
+    }
+
+    function loginUser() {
+      const email = document.getElementById('loginEmail').value;
+      const pass = document.getElementById('loginPass').value;
+      auth.signInWithEmailAndPassword(email, pass).then(() => {
+        showDashboard();
+      }).catch(err => alert(err.message));
+    }
+
+    function resetPassword() {
+      const email = prompt("Enter your registered email:");
+      if (!email) return;
+      auth.sendPasswordResetEmail(email).then(() => {
+        alert("Reset link sent to your email!");
+      }).catch(err => alert(err.message));
+    }
+
+    function logout() {
+      auth.signOut().then(() => {
+        document.getElementById('dashboard').style.display = "none";
+        document.getElementById('loginForm').style.display = "flex";
+      });
+    }
+
+    function showDashboard() {
+      document.getElementById('loginForm').style.display = "none";
+      document.getElementById('signupForm').style.display = "none";
+      document.getElementById('dashboard').style.display = "flex";
+    }
+
+    auth.onAuthStateChanged(user => {
+      if (user) showDashboard();
+    });
+  </script>
+</body>
+</html>
